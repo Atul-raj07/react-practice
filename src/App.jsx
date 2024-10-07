@@ -1,20 +1,15 @@
+import React, { createContext, useState } from 'react'
+import Header from './components/Header'
+import Headerchild from './components/Headerchild'
 
-import Header from './components/Header';
-const styles = {
-  fontSize:"80px",
-  color:"yellow",
-}
+export const DataContext = createContext(null)
 
 const App = () => {
+  const [data,setdata] = useState("data json data data  set data  update boolean")
   return (
-    <div>
-    <div style={{fontSize:'40px',backgroundColor:"black",color:'pink'}}>
-      App</div>
-      <h2 style={styles}>mumijckmsdk</h2>
-      <h1>njfijkjfjfdkjjiofd</h1>
-      <h1 className='lolo'>hlw darling</h1>
-      <Header />
-      </div>
+    <DataContext.Provider value={[data,setdata]}>
+      <Header/>
+      </DataContext.Provider>
   )
 }
 

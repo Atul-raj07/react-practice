@@ -1,16 +1,12 @@
-
-import "../index.css";
-import css from "../components/Header.module.css"
+import React from 'react'
+import Headerchild from './Headerchild'
 
 const Header = () => {
-    
-    
   return (
     <div>
-        Header
-        <h1 className='lolo'>im from header</h1>
-        <h2 className={css.something} >lolkookl222222</h2>
-        </div>
+      Header enfnijej
+      <Headerchild /> 
+       </div>
   )
 }
 
