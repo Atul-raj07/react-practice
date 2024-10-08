@@ -1,12 +1,13 @@
-import React from 'react'
-import Headerchild from './Headerchild'
+import React, { useContext } from 'react';
+import{ DataContext} from '../Contexts/Dataprovider';
+
 
 const Header = () => {
+   const [data,setdata] = useContext(DataContext)
   return (
     <div>
-      Header enfnijej
-      <Headerchild /> 
-       </div>
+        {data}
+    </div>
   )
 }
 
